@@ -119,7 +119,7 @@ else
         lunch "pa_$DEVICE-userdebug";
 
         echo -e "${bldblu}Starting compilation${txtrst}"
-        mka bacon
+        mka -j"$THREADS" bacon
 fi
 echo -e ""
 
