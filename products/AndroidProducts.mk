@@ -123,6 +123,9 @@ endif
 ifeq (pa_m8,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_m8.mk
 endif
+ifeq (pa_marvel,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_marvel.mk
+endif
 ifeq (pa_maserati,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_maserati.mk
 endif
