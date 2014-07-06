@@ -41,7 +41,7 @@ ifneq ($(filter pa_a510 pa_a700 pa_n5100 pa_n5110 pa_n5120,$(TARGET_PRODUCT)),)
 endif
 
 # PA MDPI Devices
-ifneq ($(filter pa_marvel,$(TARGET_PRODUCT)),)
+ifneq ($(filter pa_marvel pa_cooper,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/pa/prebuilt/bootanimation/480x320.zip:system/media/bootanimation.zip
 endif
